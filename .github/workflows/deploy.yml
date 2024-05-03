@@ -15,8 +15,9 @@ jobs:
     services:
       mongodb:
         image: mongo
-        env: MONGO_INITDB_ROOT_USERNAME: root
-        env: MONGO_INITDB_ROOT_PASSWORD: root
+        env:
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: root
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
       MONGODB_CLUSTER_ADDRESS: mongodb
